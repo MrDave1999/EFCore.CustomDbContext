@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>disable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <PackageId>EFCore.CustomDbContext</PackageId>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>David Román Amariles</Authors>
+    <Copyright>David Román Amariles</Copyright>
+    <PackageProjectUrl>https://github.com/MrDave1999/EFCore.CustomDbContext</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/MrDave1999/EFCore.CustomDbContext</RepositoryUrl>
+    <PackageTags>entity-framework-core, Entity, Core, ef, efcore, core, orm, dbcontext, DbContext, createdAt, updatedAt, created_at, updated_at</PackageTags>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <Description>
+	This library automatically sets the createdAt and updatedAt properties.
+	This library uses the code from the following tutorial as a base: https://www.entityframeworktutorial.net/faq/set-created-and-modified-date-in-efcore.aspx
+	</Description>
+    <Version>1.0.0</Version>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.10" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Include="..\LICENSE" Pack="True" PackagePath="" />
+  </ItemGroup>
+  
+</Project>
